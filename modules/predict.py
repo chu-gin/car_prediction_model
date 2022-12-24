@@ -13,7 +13,7 @@ def predict():
     with open(f'{path}/data/models/'+path_model[path_num-1], 'rb') as file:
         model = dill.load(file)
 
-    files_test = [name for name in os.listdir('../data/test/') if os.path.isfile(os.path.join('../data/test/', name))]
+    files_test = [name for name in os.listdir(f'{path}/data/test/') if os.path.isfile(os.path.join(f'{path}/data/test/', name))]
 
     list_test = list()
     for test in files_test:

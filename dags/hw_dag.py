@@ -13,8 +13,8 @@ os.environ['PROJECT_PATH'] = path
 sys.path.insert(0, path)
 
 
-from modules import pipeline
-from modules import predict
+from modules.pipeline import pipeline
+from modules.predict import predict
 
 args = {
     'owner': 'airflow',
